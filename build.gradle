@@ -45,10 +45,6 @@ android {
 	compileSdkVersion 29
 	buildToolsVersion "29.0.3"
 	
-    lintOptions {
-        abortOnError false
-    }
-
 	defaultConfig {
 		applicationId "org.quantumbadger.redreader"
 		minSdkVersion 14
@@ -78,7 +74,7 @@ android {
 
 	lintOptions {
 		checkReleaseBuilds false
-		abortOnError true
+		abortOnError false
 		warningsAsErrors true
 
 		error 'DefaultLocale'
