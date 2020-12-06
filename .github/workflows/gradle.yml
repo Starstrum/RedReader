@@ -24,3 +24,9 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Send Push Notification
+      uses: techulus/push-github-action@1.0.0
+      env:
+        API_KEY: 991af572-5ff6-447b-9e41-48c567e3f542
+        MESSAGE: "HI Maxwell gradle finished building"
+        
